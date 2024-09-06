@@ -22,7 +22,7 @@ function Products() {
     }, []);
 
     return (   
-        <Flex gap={{base: 4, md: 4, lg: '3%'}} wrap={'wrap'}>
+        <Flex gap={{base: 4, md: 4, lg: 4 }} wrap={'wrap'}>
             {products.map((item, index) => (
                 <Card key={index} w={{base: '100%', md: 100, lg: '31.3%'}}>
                     <CardBody>
@@ -48,9 +48,6 @@ function Products() {
                         <ButtonGroup spacing='2'>
                             <Button variant='solid' colorScheme='blue'>
                                 Comprar agora
-                            </Button>
-                            <Button variant='ghost' colorScheme='blue'>
-                                Adiconar aos favoritos
                             </Button>
                         </ButtonGroup>
                     </CardFooter>
